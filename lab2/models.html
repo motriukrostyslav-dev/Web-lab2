@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Список авто — Audi</title>
+  <link rel="stylesheet" href="style_models.css">
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">More ▼</a>
+        <ul class="submenu">
+          <li><a href="#">Link1</a></li>
+          <li><a href="#">Link2</a></li>
+          <li><a href="#">Link3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="search-box">
+    <input type="text" id="search" placeholder="Search...">
+    <button>
+      🔍
+    </button>
+
+    <select id="filter-fuel">
+      <option value="all">Всі</option>
+      <option value="petrol">Бензин</option>
+      <option value="disel">Дизель</option>
+      <option value="hybrid">Гібрид</option>
+      <option value="electro">Електро</option>
+    </select>
+    
+    <select id="sorting">
+      <option value="default">Всі</option>
+      <option value="asc">Ціна ↑</option>
+      <option value="desc">Ціна ↓</option>
+      <option value="name">По назві</option>
+    </select>
+
+    <input type="number" id="min-price" placeholder="Min price">
+    <input type="number" id="max-price" placeholder="Max price">
+  </section>
+
+  <div id="subscribe" class="popup">
+    <p>Підписатись на новини?</p>
+    <button id="accept">Так</button>
+    <button id="decline">Ні</button>
+</div>
+
+  <div id="cars"></div>
+
+  <button id="load-more">Більше</button>
+
+  <button id="scrollTop">↑</button>
+
+
+  <script src="script.js"></script>
+
+  <a href="#">
+    <button class="scroll-btn">↑</button>
+  </a>
+  
+  <div id="cartBox" class="cart-box"></div>
+</body>
+</html>
