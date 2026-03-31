@@ -124,7 +124,7 @@ document.getElementById("load-more").onclick = () =>{
 let upBtn = document.getElementById("scrollTop");
 
 window.addEventListener("scroll", () => {
-    if(window.scrollY > window.innerHeight * 2/3){
+    if(window.scrollY > window.innerHeight * 1/3){
         upBtn.style.display = "block";
     }else{
         upBtn.style.display = "none";
